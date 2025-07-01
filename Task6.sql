@@ -1,19 +1,14 @@
- create table branch (
+create table branch (
 branch_id int,
 location varchar(30),
 address varchar(30)
 );
  
 insert into branch values(1,"Puducherry","no:20,adc street");
-
 insert into branch values(2,"chennai","no:2,xyz street");
-
 insert into branch values(3,"Bengaluru","no:78,staint colony");
-
 insert into branch values(4,"coimbatore","no:10,anna nagar");
-
 insert into branch values(5,"pune","no:46,raman street");
-
 insert into branch values(6,"Hyderabad","no:21,bahathur street");
 
 create table employee1(
@@ -24,7 +19,6 @@ create table employee1(
  branch_id int,
   foreign key (branch_id) references branch (branch_id)
  );
-
 
  Insert into employee1 values(1,"Anbu","MANAGER",800000,1);
  Insert into employee1 values(2,"Arun","HR",900000,2);
